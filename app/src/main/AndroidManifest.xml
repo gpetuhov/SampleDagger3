@@ -19,6 +19,9 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".CalculatorActivity">
+        </activity>
+
     </application>
 
 </manifest>
