@@ -19,8 +19,8 @@ class SubtractorActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_operation)
 
+        // Inject dependencies and use them to display app title, calculator title and subtract result
         App.getSubtractorComponent()?.inject(this)
-
         appTitle.text = appTitleProvider.appTitle
         calculatorTitle.text = calculatorTitleProvider.calculatorTitle
         result.text = subtractor.result

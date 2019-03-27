@@ -8,6 +8,8 @@ import com.pawegio.kandroid.startActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 
+// App's main screen.
+// Here we use AppComponent to inject AppTitleProvider.
 class MainActivity : AppCompatActivity() {
 
     @Inject lateinit var appTitleProvider: AppTitleProvider
@@ -16,10 +18,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Inject AppTitleProvider and display app title
         App.appComponent?.inject(this)
-
         appTitle.text = appTitleProvider.appTitle
 
+        // Start CalculatorActivity
         calculatorButton.setOnClickListener { startActivity<CalculatorActivity>() }
     }
 }

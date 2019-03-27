@@ -5,6 +5,8 @@ import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
 
+// AppModule provides AppTitleProvider with Singleton scope
+
 @Module
 class AppModule {
 

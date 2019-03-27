@@ -5,6 +5,8 @@ import com.gpetuhov.android.sampledagger3.calculator.Adder
 import dagger.Module
 import dagger.Provides
 
+// AdderModule provides Adder with AdderScope
+
 @Module
 class AdderModule {
 

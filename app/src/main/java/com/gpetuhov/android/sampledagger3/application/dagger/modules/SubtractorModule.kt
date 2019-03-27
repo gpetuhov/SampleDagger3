@@ -5,6 +5,8 @@ import com.gpetuhov.android.sampledagger3.calculator.Subtractor
 import dagger.Module
 import dagger.Provides
 
+// SubtractorModule provides Subtractor with SubtractorScope
+
 @Module
 class SubtractorModule {
 

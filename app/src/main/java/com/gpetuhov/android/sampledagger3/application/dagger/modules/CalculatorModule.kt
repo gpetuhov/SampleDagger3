@@ -5,6 +5,8 @@ import com.gpetuhov.android.sampledagger3.calculator.CalculatorTitleProvider
 import dagger.Module
 import dagger.Provides
 
+// CalculatorModule provides CalculatorTitleProvider with CalculatorScope
+
 @Module
 class CalculatorModule {
 

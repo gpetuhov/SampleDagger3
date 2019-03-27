@@ -4,6 +4,10 @@ import android.app.Application
 import com.gpetuhov.android.sampledagger3.application.dagger.components.*
 import com.gpetuhov.android.sampledagger3.application.dagger.modules.AppModule
 
+// Application class is used to control lifecycle of the components.
+
+// Don't forget to use it in the manifest!
+
 class App : Application() {
 
     companion object {
@@ -12,6 +16,7 @@ class App : Application() {
         private var adderComponent: AdderComponent? = null
         private var subtractorComponent: SubtractorComponent? = null
 
+        // Components are instantiated as singletons
         fun getCalculatorComponent(): CalculatorComponent? {
             if (calculatorComponent == null) {
                 calculatorComponent = DaggerCalculatorComponent.builder()
@@ -21,6 +26,7 @@ class App : Application() {
             return calculatorComponent
         }
 
+        // Lifecycle of the components is controlled manually
         fun clearCalculatorComponent() {
             calculatorComponent = null
         }
