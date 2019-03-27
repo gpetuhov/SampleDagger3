@@ -22,6 +22,9 @@
         <activity android:name=".CalculatorActivity">
         </activity>
 
+        <activity android:name=".AdderActivity">
+        </activity>
+
     </application>
 
 </manifest>
