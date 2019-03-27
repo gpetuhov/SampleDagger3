@@ -12,5 +12,6 @@ class CalculatorActivity : AppCompatActivity() {
         setContentView(R.layout.activity_calculator)
 
         addButton.setOnClickListener { startActivity<AdderActivity>() }
+        subtractButton.setOnClickListener { startActivity<SubtractorActivity>() }
     }
 }
